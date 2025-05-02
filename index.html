@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <img src="assets/go.png" alt="Company Logo" class="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Gold Jewellery Price Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gold Jewellery Price Calculator</h1>
+      <p class="gst-info">
+        <span class="tick-wrapper">
+          <span class="tick-mark">✔</span>
+        </span>
+        3% GST is already included</p> 
+    </header>
+
+    <main>
+      <form id="price-form" onsubmit="event.preventDefault(); handleCalculation();">
+        <div class="form-group">
+          <label for="carat">Gold Carat:</label>
+          <select id="carat" required>
+            <option value="">-- Select Carat --</option>
+            <option value="18">18K</option>
+            <option value="22">22K</option>
+            <option value="24">24K</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Weight (in grams):</label>
+          <input type="number" id="weight" placeholder="e.g., 20" required />
+        </div>
+
+        <div class="form-group">
+          <label for="rate">24K Gold Rate Today (per gram):</label>
+          <input type="number" id="rate" placeholder="e.g., 7000" required />
+        </div>
+
+        <div class="form-group">
+          <label for="making">Making Charges (in ₹):</label>
+          <input type="number" id="making" placeholder="e.g., 3000" required />
+        </div>
+
+        <button type="submit">Calculate Price</button>
+      </form>
+
+      <div id="result" class="result-box">
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
