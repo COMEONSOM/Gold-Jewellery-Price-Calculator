@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #fffbe6;
+  --bg-color: #f1e5ac;
   --container-bg: #fdf6e3;
   --primary-color: #b58900;
   --primary-dark: #a57706;
@@ -37,13 +37,11 @@ header {
 }
 
 .logo {
-  width: 100px;
-  
-  height: 100px;
+  max-width: 100%;
+  max-height: 120px;
   display: block;
-  border-radius: 50%;
+  margin: auto;
   margin-bottom: 10px;
-  text-indent: -9999px;
 }
 
 h1 {
@@ -103,4 +101,14 @@ button {
 
 button:hover {
   background-color: var(--primary-dark);
+}
+
+/* ───────── Footer ───────── */
+.site-footer {
+  background: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: var(--section-gap);
+  font-size: 0.9rem;
+  color: var(--muted-text);
 }
