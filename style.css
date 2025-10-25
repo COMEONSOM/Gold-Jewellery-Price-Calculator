@@ -1,15 +1,15 @@
 :root {
-  --bg-color: #f1e5ac;
-  --container-bg: #fdf6e3;
-  --primary-color: #b58900;
-  --primary-dark: #a57706;
-  --text-color: #333;
+  --bg-color: #ffffff;
+  --container-bg: #070152;
+  --primary-color: #e6e31c;
+  --primary-dark: #0bf807;
+  --text-color: #f2f067;
   --highlight-bg: #eee8d5;
   --border-radius: 10px;
   --font-family: 'Arial', sans-serif;
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease-in-out;
-  --success-green: #4CAF50;
+  --success-green: #67f56c;
   --circle-size: 20px;
   --tick-size: 16px;
 }
@@ -26,9 +26,8 @@ body {
   max-width: 500px;
   margin: auto;
   padding: 30px;
+  border-radius: 10px;
   background: var(--container-bg);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
 
 header {
@@ -37,11 +36,12 @@ header {
 }
 
 .logo {
-  max-width: 100%;
-  max-height: 120px;
+  max-width: 160px;
+  height: auto;
   display: block;
   margin: auto;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 h1 {
@@ -50,7 +50,7 @@ h1 {
 }
 
 .gst-info {
-  color: green;
+  color: rgb(95, 246, 95);
   font-weight: bold;
   margin-top: 5px;
   font-size: 14px;
@@ -91,7 +91,8 @@ input[type="number"] {
 button {
   padding: 12px;
   background-color: var(--primary-color);
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -101,6 +102,8 @@ button {
 
 button:hover {
   background-color: var(--primary-dark);
+  color: #070152;
+  transform: translateY(-4px) scale(1.03);
 }
 
 /* ───────── Footer ───────── */
@@ -108,7 +111,13 @@ button:hover {
   background: var(--white);
   text-align: center;
   padding: 2rem 1rem;
-  margin-top: var(--section-gap);
   font-size: 0.9rem;
-  color: var(--muted-text);
+  color: #000000;
+  font-weight: bold;
+}
+
+/* REDUCE GAP BETWEEN FOOTER PARAGRAPHS */
+.site-footer p {
+  margin: 0.2rem 0; /* SMALL TOP AND BOTTOM MARGIN */
+  line-height: 1.2; /* TIGHTER LINE HEIGHT */
 }
